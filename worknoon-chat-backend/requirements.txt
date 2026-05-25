@@ -1,0 +1,12 @@
+node version: v25.2.0
+npm version: 11.6.2
+npx version: 11.6.2
+
+
+
+npm install mongodb
+npm install winston
+npm install nodemailer
+
+//charlesgodwin54_db_user
+//GjU0WrQMsqXiCmLd

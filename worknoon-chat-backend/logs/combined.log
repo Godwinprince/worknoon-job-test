@@ -1,0 +1,692 @@
+2026-05-23 17:28:04 [INFO]: Server running on port 5000
+2026-05-23 17:28:06 [INFO]: MongoDB connected
+2026-05-23 17:32:42 [INFO]: Server running on port 5000
+2026-05-23 17:32:50 [INFO]: MongoDB connected
+2026-05-23 17:35:54 [INFO]: Server running on port 5000
+2026-05-23 17:36:00 [INFO]: MongoDB connected
+2026-05-23 17:36:02 [ERROR]: Illegal arguments: undefined, string
+Error: Illegal arguments: undefined, string
+    at _async (C:\nodejsservers\worknoon-chat-backend\node_modules\bcryptjs\umd\index.js:305:15)
+    at C:\nodejsservers\worknoon-chat-backend\node_modules\bcryptjs\umd\index.js:335:11
+    at new Promise (<anonymous>)
+    at Object.compare (C:\nodejsservers\worknoon-chat-backend\node_modules\bcryptjs\umd\index.js:334:16)
+    at UserSchema.methods.comparePassword (C:\nodejsservers\worknoon-chat-backend\models\User.js:31:23)
+    at C:\nodejsservers\worknoon-chat-backend\routes\auth.js:49:32
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5) {"route":"/api/auth/login","method":"POST"}
+2026-05-23 17:41:41 [INFO]: Server running on port 5000
+2026-05-23 17:41:43 [INFO]: MongoDB connected
+2026-05-23 18:15:47 [ERROR]: Uncaught Exception: Cannot find module 'nodemailer'
+Require stack:
+- C:\nodejsservers\worknoon-chat-backend\utils\email.js
+- C:\nodejsservers\worknoon-chat-backend\server.js
+Error: Cannot find module 'nodemailer'
+Require stack:
+- C:\nodejsservers\worknoon-chat-backend\utils\email.js
+- C:\nodejsservers\worknoon-chat-backend\server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1420:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1058:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1063:22)
+    at Module._load (node:internal/modules/cjs/loader:1226:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1503:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (C:\nodejsservers\worknoon-chat-backend\utils\email.js:1:20)
+    at Module._compile (node:internal/modules/cjs/loader:1760:14)
+2026-05-23 18:17:21 [INFO]: Server running on port 5000
+2026-05-23 18:17:23 [INFO]: MongoDB connected
+2026-05-24 14:50:58 [INFO]: Server running on port 5000
+2026-05-24 14:51:35 [ERROR]: MongoDB connection error: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/
+MongooseServerSelectionError: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/
+    at _handleConnectionErrors (C:\nodejsservers\worknoon-chat-backend\node_modules\mongoose\lib\connection.js:1180:11)
+    at NativeConnection.openUri (C:\nodejsservers\worknoon-chat-backend\node_modules\mongoose\lib\connection.js:1111:11) {"errorLabelSet":{},"reason":{"type":"ReplicaSetNoPrimary","servers":{"ac-blxffz2-shard-00-00.gqcrdvt.mongodb.net:27017":{"address":"ac-blxffz2-shard-00-00.gqcrdvt.mongodb.net:27017","type":"Unknown","hosts":[],"passives":[],"arbiters":[],"tags":{},"minWireVersion":0,"maxWireVersion":0,"roundTripTime":-1,"minRoundTripTime":0,"lastUpdateTime":36844,"lastWriteDate":0,"error":{"errorLabelSet":{},"beforeHandshake":false},"topologyVersion":null,"setName":null,"setVersion":null,"electionId":null,"logicalSessionTimeoutMinutes":null,"maxMessageSizeBytes":null,"maxWriteBatchSize":null,"maxBsonObjectSize":null,"primary":null,"me":null,"$clusterTime":null,"iscryptd":false},"ac-blxffz2-shard-00-01.gqcrdvt.mongodb.net:27017":{"address":"ac-blxffz2-shard-00-01.gqcrdvt.mongodb.net:27017","type":"Unknown","hosts":[],"passives":[],"arbiters":[],"tags":{},"minWireVersion":0,"maxWireVersion":0,"roundTripTime":-1,"minRoundTripTime":0,"lastUpdateTime":35071,"lastWriteDate":0,"error":{"errorLabelSet":{},"beforeHandshake":false},"topologyVersion":null,"setName":null,"setVersion":null,"electionId":null,"logicalSessionTimeoutMinutes":null,"maxMessageSizeBytes":null,"maxWriteBatchSize":null,"maxBsonObjectSize":null,"primary":null,"me":null,"$clusterTime":null,"iscryptd":false},"ac-blxffz2-shard-00-02.gqcrdvt.mongodb.net:27017":{"address":"ac-blxffz2-shard-00-02.gqcrdvt.mongodb.net:27017","type":"Unknown","hosts":[],"passives":[],"arbiters":[],"tags":{},"minWireVersion":0,"maxWireVersion":0,"roundTripTime":-1,"minRoundTripTime":0,"lastUpdateTime":36701,"lastWriteDate":0,"error":{"errorLabelSet":{},"beforeHandshake":false},"topologyVersion":null,"setName":null,"setVersion":null,"electionId":null,"logicalSessionTimeoutMinutes":null,"maxMessageSizeBytes":null,"maxWriteBatchSize":null,"maxBsonObjectSize":null,"primary":null,"me":null,"$clusterTime":null,"iscryptd":false}},"stale":false,"compatible":true,"heartbeatFrequencyMS":10000,"localThresholdMS":15,"setName":"atlas-3h6xgi-shard-0","maxElectionId":null,"maxSetVersion":null,"commonWireVersion":0,"logicalSessionTimeoutMinutes":null},"cause":{"type":"ReplicaSetNoPrimary","servers":{"ac-blxffz2-shard-00-00.gqcrdvt.mongodb.net:27017":{"address":"ac-blxffz2-shard-00-00.gqcrdvt.mongodb.net:27017","type":"Unknown","hosts":[],"passives":[],"arbiters":[],"tags":{},"minWireVersion":0,"maxWireVersion":0,"roundTripTime":-1,"minRoundTripTime":0,"lastUpdateTime":36844,"lastWriteDate":0,"error":{"errorLabelSet":{},"beforeHandshake":false},"topologyVersion":null,"setName":null,"setVersion":null,"electionId":null,"logicalSessionTimeoutMinutes":null,"maxMessageSizeBytes":null,"maxWriteBatchSize":null,"maxBsonObjectSize":null,"primary":null,"me":null,"$clusterTime":null,"iscryptd":false},"ac-blxffz2-shard-00-01.gqcrdvt.mongodb.net:27017":{"address":"ac-blxffz2-shard-00-01.gqcrdvt.mongodb.net:27017","type":"Unknown","hosts":[],"passives":[],"arbiters":[],"tags":{},"minWireVersion":0,"maxWireVersion":0,"roundTripTime":-1,"minRoundTripTime":0,"lastUpdateTime":35071,"lastWriteDate":0,"error":{"errorLabelSet":{},"beforeHandshake":false},"topologyVersion":null,"setName":null,"setVersion":null,"electionId":null,"logicalSessionTimeoutMinutes":null,"maxMessageSizeBytes":null,"maxWriteBatchSize":null,"maxBsonObjectSize":null,"primary":null,"me":null,"$clusterTime":null,"iscryptd":false},"ac-blxffz2-shard-00-02.gqcrdvt.mongodb.net:27017":{"address":"ac-blxffz2-shard-00-02.gqcrdvt.mongodb.net:27017","type":"Unknown","hosts":[],"passives":[],"arbiters":[],"tags":{},"minWireVersion":0,"maxWireVersion":0,"roundTripTime":-1,"minRoundTripTime":0,"lastUpdateTime":36701,"lastWriteDate":0,"error":{"errorLabelSet":{},"beforeHandshake":false},"topologyVersion":null,"setName":null,"setVersion":null,"electionId":null,"logicalSessionTimeoutMinutes":null,"maxMessageSizeBytes":null,"maxWriteBatchSize":null,"maxBsonObjectSize":null,"primary":null,"me":null,"$clusterTime":null,"iscryptd":false}},"stale":false,"compatible":true,"heartbeatFrequencyMS":10000,"localThresholdMS":15,"setName":"atlas-3h6xgi-shard-0","maxElectionId":null,"maxSetVersion":null,"commonWireVersion":0,"logicalSessionTimeoutMinutes":null}}
+2026-05-24 14:51:57 [ERROR]: Operation `users.findOne()` buffering timed out after 10000ms
+MongooseError: Operation `users.findOne()` buffering timed out after 10000ms
+    at Timeout._onTimeout (C:\nodejsservers\worknoon-chat-backend\node_modules\mongoose\lib\drivers\node-mongodb-native\collection.js:142:25)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7) {"route":"/api/auth/login","method":"POST"}
+2026-05-24 14:52:54 [INFO]: Server running on port 5000
+2026-05-24 14:53:32 [ERROR]: Operation `users.findOne()` buffering timed out after 10000ms
+MongooseError: Operation `users.findOne()` buffering timed out after 10000ms
+    at Timeout._onTimeout (C:\nodejsservers\worknoon-chat-backend\node_modules\mongoose\lib\drivers\node-mongodb-native\collection.js:142:25)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7) {"route":"/api/auth/login","method":"POST"}
+2026-05-24 14:53:35 [ERROR]: MongoDB connection error: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/
+MongooseServerSelectionError: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/
+    at _handleConnectionErrors (C:\nodejsservers\worknoon-chat-backend\node_modules\mongoose\lib\connection.js:1180:11)
+    at NativeConnection.openUri (C:\nodejsservers\worknoon-chat-backend\node_modules\mongoose\lib\connection.js:1111:11) {"errorLabelSet":{},"reason":{"type":"ReplicaSetNoPrimary","servers":{"ac-blxffz2-shard-00-00.gqcrdvt.mongodb.net:27017":{"address":"ac-blxffz2-shard-00-00.gqcrdvt.mongodb.net:27017","type":"Unknown","hosts":[],"passives":[],"arbiters":[],"tags":{},"minWireVersion":0,"maxWireVersion":0,"roundTripTime":-1,"minRoundTripTime":0,"lastUpdateTime":41734,"lastWriteDate":0,"error":{"errorLabelSet":{},"beforeHandshake":false},"topologyVersion":null,"setName":null,"setVersion":null,"electionId":null,"logicalSessionTimeoutMinutes":null,"maxMessageSizeBytes":null,"maxWriteBatchSize":null,"maxBsonObjectSize":null,"primary":null,"me":null,"$clusterTime":null,"iscryptd":false},"ac-blxffz2-shard-00-01.gqcrdvt.mongodb.net:27017":{"address":"ac-blxffz2-shard-00-01.gqcrdvt.mongodb.net:27017","type":"Unknown","hosts":[],"passives":[],"arbiters":[],"tags":{},"minWireVersion":0,"maxWireVersion":0,"roundTripTime":-1,"minRoundTripTime":0,"lastUpdateTime":41809,"lastWriteDate":0,"error":{"errorLabelSet":{},"beforeHandshake":false},"topologyVersion":null,"setName":null,"setVersion":null,"electionId":null,"logicalSessionTimeoutMinutes":null,"maxMessageSizeBytes":null,"maxWriteBatchSize":null,"maxBsonObjectSize":null,"primary":null,"me":null,"$clusterTime":null,"iscryptd":false},"ac-blxffz2-shard-00-02.gqcrdvt.mongodb.net:27017":{"address":"ac-blxffz2-shard-00-02.gqcrdvt.mongodb.net:27017","type":"Unknown","hosts":[],"passives":[],"arbiters":[],"tags":{},"minWireVersion":0,"maxWireVersion":0,"roundTripTime":-1,"minRoundTripTime":0,"lastUpdateTime":42660,"lastWriteDate":0,"error":{"errorLabelSet":{},"beforeHandshake":false},"topologyVersion":null,"setName":null,"setVersion":null,"electionId":null,"logicalSessionTimeoutMinutes":null,"maxMessageSizeBytes":null,"maxWriteBatchSize":null,"maxBsonObjectSize":null,"primary":null,"me":null,"$clusterTime":null,"iscryptd":false}},"stale":false,"compatible":true,"heartbeatFrequencyMS":10000,"localThresholdMS":15,"setName":"atlas-3h6xgi-shard-0","maxElectionId":null,"maxSetVersion":null,"commonWireVersion":0,"logicalSessionTimeoutMinutes":null},"cause":{"type":"ReplicaSetNoPrimary","servers":{"ac-blxffz2-shard-00-00.gqcrdvt.mongodb.net:27017":{"address":"ac-blxffz2-shard-00-00.gqcrdvt.mongodb.net:27017","type":"Unknown","hosts":[],"passives":[],"arbiters":[],"tags":{},"minWireVersion":0,"maxWireVersion":0,"roundTripTime":-1,"minRoundTripTime":0,"lastUpdateTime":41734,"lastWriteDate":0,"error":{"errorLabelSet":{},"beforeHandshake":false},"topologyVersion":null,"setName":null,"setVersion":null,"electionId":null,"logicalSessionTimeoutMinutes":null,"maxMessageSizeBytes":null,"maxWriteBatchSize":null,"maxBsonObjectSize":null,"primary":null,"me":null,"$clusterTime":null,"iscryptd":false},"ac-blxffz2-shard-00-01.gqcrdvt.mongodb.net:27017":{"address":"ac-blxffz2-shard-00-01.gqcrdvt.mongodb.net:27017","type":"Unknown","hosts":[],"passives":[],"arbiters":[],"tags":{},"minWireVersion":0,"maxWireVersion":0,"roundTripTime":-1,"minRoundTripTime":0,"lastUpdateTime":41809,"lastWriteDate":0,"error":{"errorLabelSet":{},"beforeHandshake":false},"topologyVersion":null,"setName":null,"setVersion":null,"electionId":null,"logicalSessionTimeoutMinutes":null,"maxMessageSizeBytes":null,"maxWriteBatchSize":null,"maxBsonObjectSize":null,"primary":null,"me":null,"$clusterTime":null,"iscryptd":false},"ac-blxffz2-shard-00-02.gqcrdvt.mongodb.net:27017":{"address":"ac-blxffz2-shard-00-02.gqcrdvt.mongodb.net:27017","type":"Unknown","hosts":[],"passives":[],"arbiters":[],"tags":{},"minWireVersion":0,"maxWireVersion":0,"roundTripTime":-1,"minRoundTripTime":0,"lastUpdateTime":42660,"lastWriteDate":0,"error":{"errorLabelSet":{},"beforeHandshake":false},"topologyVersion":null,"setName":null,"setVersion":null,"electionId":null,"logicalSessionTimeoutMinutes":null,"maxMessageSizeBytes":null,"maxWriteBatchSize":null,"maxBsonObjectSize":null,"primary":null,"me":null,"$clusterTime":null,"iscryptd":false}},"stale":false,"compatible":true,"heartbeatFrequencyMS":10000,"localThresholdMS":15,"setName":"atlas-3h6xgi-shard-0","maxElectionId":null,"maxSetVersion":null,"commonWireVersion":0,"logicalSessionTimeoutMinutes":null}}
+2026-05-24 14:55:01 [ERROR]: Operation `users.findOne()` buffering timed out after 10000ms
+MongooseError: Operation `users.findOne()` buffering timed out after 10000ms
+    at Timeout._onTimeout (C:\nodejsservers\worknoon-chat-backend\node_modules\mongoose\lib\drivers\node-mongodb-native\collection.js:142:25)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7) {"route":"/api/auth/login","method":"POST"}
+2026-05-24 15:12:27 [INFO]: Server running on port 5000
+2026-05-24 15:13:06 [INFO]: MongoDB connected
+2026-05-24 15:36:41 [INFO]: Server running on port 5000
+2026-05-24 15:37:19 [INFO]: MongoDB connected
+2026-05-24 15:46:19 [INFO]: User connected: MIazNNOaIhYm4gIxAAAB
+2026-05-24 15:46:19 [INFO]: User 6a1307a936dae3fcbe24a388 joined their room and is now online
+2026-05-24 15:46:29 [ERROR]: Send message error: Cannot read properties of null (reading 'toString')
+TypeError: Cannot read properties of null (reading 'toString')
+    at C:\nodejsservers\worknoon-chat-backend\server.js:109:66
+    at Array.filter (<anonymous>)
+    at methods.<computed> (C:\nodejsservers\worknoon-chat-backend\node_modules\mongoose\lib\types\array\methods\index.js:1091:24)
+    at Socket.<anonymous> (C:\nodejsservers\worknoon-chat-backend\server.js:109:52)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-05-24 15:46:40 [INFO]: User 6a1307a936dae3fcbe24a388 is now offline
+2026-05-24 15:46:40 [INFO]: User disconnected: MIazNNOaIhYm4gIxAAAB
+2026-05-24 15:46:55 [INFO]: User connected: PNKYd0k_p-03IwwLAAAD
+2026-05-24 15:46:56 [INFO]: User 6a1307a936dae3fcbe24a388 joined their room and is now online
+2026-05-24 15:47:00 [INFO]: User 6a1307a936dae3fcbe24a388 is now offline
+2026-05-24 15:47:00 [INFO]: User disconnected: PNKYd0k_p-03IwwLAAAD
+2026-05-24 15:47:08 [INFO]: User connected: x_zX_43_CIez-fgzAAAF
+2026-05-24 15:47:10 [INFO]: User 6a1307a936dae3fcbe24a388 joined their room and is now online
+2026-05-24 15:47:18 [ERROR]: Send message error: Cannot read properties of null (reading 'toString')
+TypeError: Cannot read properties of null (reading 'toString')
+    at C:\nodejsservers\worknoon-chat-backend\server.js:109:66
+    at Array.filter (<anonymous>)
+    at methods.<computed> (C:\nodejsservers\worknoon-chat-backend\node_modules\mongoose\lib\types\array\methods\index.js:1091:24)
+    at Socket.<anonymous> (C:\nodejsservers\worknoon-chat-backend\server.js:109:52)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-05-24 15:47:26 [INFO]: User 6a1307a936dae3fcbe24a388 is now offline
+2026-05-24 15:47:26 [INFO]: User disconnected: x_zX_43_CIez-fgzAAAF
+2026-05-24 15:47:27 [INFO]: User connected: YWw-9c-Ll7nLa3rsAAAH
+2026-05-24 15:47:27 [INFO]: User 6a1307a936dae3fcbe24a388 joined their room and is now online
+2026-05-24 15:47:31 [INFO]: User 6a1307a936dae3fcbe24a388 is now offline
+2026-05-24 15:47:31 [INFO]: User disconnected: YWw-9c-Ll7nLa3rsAAAH
+2026-05-24 15:47:43 [INFO]: User connected: R8Uk-V2GG2HpPv7YAAAJ
+2026-05-24 15:47:43 [INFO]: User 6a1307a936dae3fcbe24a388 joined their room and is now online
+2026-05-24 15:47:55 [INFO]: User 6a1307a936dae3fcbe24a388 is now offline
+2026-05-24 15:47:55 [INFO]: User disconnected: R8Uk-V2GG2HpPv7YAAAJ
+2026-05-24 15:48:53 [INFO]: User connected: 5QZiCgKV-PsJCf73AAAL
+2026-05-24 15:50:09 [INFO]: User 6a1307a936dae3fcbe24a388 joined their room and is now online
+2026-05-24 15:52:04 [INFO]: User 6a1307a936dae3fcbe24a388 is now offline
+2026-05-24 15:52:04 [INFO]: User disconnected: 5QZiCgKV-PsJCf73AAAL
+2026-05-24 15:52:11 [INFO]: User connected: 7VVHFL03pu3vlgUsAAAN
+2026-05-24 15:52:11 [INFO]: User 6a1307a936dae3fcbe24a388 joined their room and is now online
+2026-05-24 15:52:18 [ERROR]: Send message error: Cannot read properties of null (reading 'toString')
+TypeError: Cannot read properties of null (reading 'toString')
+    at C:\nodejsservers\worknoon-chat-backend\server.js:109:66
+    at Array.filter (<anonymous>)
+    at methods.<computed> (C:\nodejsservers\worknoon-chat-backend\node_modules\mongoose\lib\types\array\methods\index.js:1091:24)
+    at Socket.<anonymous> (C:\nodejsservers\worknoon-chat-backend\server.js:109:52)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-05-24 15:53:46 [INFO]: User 6a1307a936dae3fcbe24a388 is now offline
+2026-05-24 15:53:46 [INFO]: User disconnected: 7VVHFL03pu3vlgUsAAAN
+2026-05-24 15:53:50 [INFO]: User connected: z5m6yYNDS2SKl074AAAP
+2026-05-24 15:53:50 [INFO]: User 6a1307a936dae3fcbe24a388 joined their room and is now online
+2026-05-24 15:54:09 [INFO]: User 6a1307a936dae3fcbe24a388 is now offline
+2026-05-24 15:54:09 [INFO]: User disconnected: z5m6yYNDS2SKl074AAAP
+2026-05-24 15:54:15 [INFO]: User connected: rWsw86fEZBI0ina2AAAR
+2026-05-24 15:54:15 [INFO]: User 6a1307a936dae3fcbe24a388 joined their room and is now online
+2026-05-24 15:56:23 [INFO]: User 6a1307a936dae3fcbe24a388 is now offline
+2026-05-24 15:56:23 [INFO]: User disconnected: rWsw86fEZBI0ina2AAAR
+2026-05-24 15:59:19 [INFO]: User connected: SQ_NAAVmaJ6G24zVAAAT
+2026-05-24 15:59:19 [INFO]: User 6a1307a936dae3fcbe24a388 joined their room and is now online
+2026-05-24 15:59:24 [INFO]: User 6a1307a936dae3fcbe24a388 is now offline
+2026-05-24 15:59:24 [INFO]: User disconnected: SQ_NAAVmaJ6G24zVAAAT
+2026-05-24 15:59:27 [INFO]: User connected: _ec7yQ8GuzDEexg8AAAV
+2026-05-24 15:59:27 [INFO]: User 6a1307a936dae3fcbe24a388 joined their room and is now online
+2026-05-24 15:59:31 [INFO]: User 6a1307a936dae3fcbe24a388 is now offline
+2026-05-24 15:59:31 [INFO]: User disconnected: _ec7yQ8GuzDEexg8AAAV
+2026-05-24 15:59:54 [INFO]: User connected: XHw3DrYCrz_9rjTnAAAX
+2026-05-24 15:59:55 [INFO]: User 6a1307a936dae3fcbe24a388 joined their room and is now online
+2026-05-24 16:00:13 [INFO]: User 6a1307a936dae3fcbe24a388 is now offline
+2026-05-24 16:00:13 [INFO]: User disconnected: XHw3DrYCrz_9rjTnAAAX
+2026-05-24 16:00:27 [INFO]: User connected: 1RFcvnlrz6VTHXHsAAAZ
+2026-05-24 16:00:27 [INFO]: User 6a1307a936dae3fcbe24a388 joined their room and is now online
+2026-05-24 16:00:38 [ERROR]: Send message error: Cannot read properties of null (reading 'toString')
+TypeError: Cannot read properties of null (reading 'toString')
+    at C:\nodejsservers\worknoon-chat-backend\server.js:109:66
+    at Array.filter (<anonymous>)
+    at methods.<computed> (C:\nodejsservers\worknoon-chat-backend\node_modules\mongoose\lib\types\array\methods\index.js:1091:24)
+    at Socket.<anonymous> (C:\nodejsservers\worknoon-chat-backend\server.js:109:52)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-05-24 16:00:48 [INFO]: User connected: e1YcMlqltUy1RFG1AAAb
+2026-05-24 16:00:49 [INFO]: User 6a1307a936dae3fcbe24a388 joined their room and is now online
+2026-05-24 16:01:03 [INFO]: User 6a1307a936dae3fcbe24a388 is now offline
+2026-05-24 16:01:03 [INFO]: User disconnected: 1RFcvnlrz6VTHXHsAAAZ
+2026-05-24 16:03:24 [INFO]: User 6a1307a936dae3fcbe24a388 is now offline
+2026-05-24 16:03:24 [INFO]: User disconnected: e1YcMlqltUy1RFG1AAAb
+2026-05-24 16:04:27 [INFO]: User connected: bWmty1RwhJQRrBg5AAAd
+2026-05-24 16:04:27 [INFO]: User 6a1307a936dae3fcbe24a388 joined their room and is now online
+2026-05-24 16:04:32 [INFO]: User 6a1307a936dae3fcbe24a388 is now offline
+2026-05-24 16:04:32 [INFO]: User disconnected: bWmty1RwhJQRrBg5AAAd
+2026-05-24 16:08:31 [INFO]: User connected: IecMdWgepK-iaCqPAAAf
+2026-05-24 16:08:37 [INFO]: User 6a11e1de0f19705178b4874a joined their room and is now online
+2026-05-24 16:10:30 [INFO]: User 6a11e1de0f19705178b4874a is now offline
+2026-05-24 16:10:30 [INFO]: User disconnected: IecMdWgepK-iaCqPAAAf
+2026-05-24 16:10:31 [INFO]: User connected: kznV4I2cutevuwdeAAAh
+2026-05-24 16:10:33 [INFO]: User 6a11e1de0f19705178b4874a joined their room and is now online
+2026-05-24 16:10:36 [INFO]: User 6a11e1de0f19705178b4874a is now offline
+2026-05-24 16:10:36 [INFO]: User disconnected: kznV4I2cutevuwdeAAAh
+2026-05-24 16:11:20 [INFO]: User connected: WaWf6Gb_mUii2AlZAAAj
+2026-05-24 16:11:21 [INFO]: User connected: l9_yEteTenbQt-aZAAAl
+2026-05-24 16:11:21 [INFO]: User 6a1307a936dae3fcbe24a388 is now offline
+2026-05-24 16:11:21 [INFO]: User disconnected: WaWf6Gb_mUii2AlZAAAj
+2026-05-24 16:11:22 [INFO]: User 6a1307a936dae3fcbe24a388 joined their room and is now online
+2026-05-24 16:11:23 [INFO]: User 6a1307a936dae3fcbe24a388 joined their room and is now online
+2026-05-24 16:11:26 [INFO]: User 6a1307a936dae3fcbe24a388 is now offline
+2026-05-24 16:11:26 [INFO]: User disconnected: l9_yEteTenbQt-aZAAAl
+2026-05-24 16:11:29 [INFO]: User connected: unRFg62Qjs4QPPv3AAAn
+2026-05-24 16:11:29 [INFO]: User 6a1307a936dae3fcbe24a388 joined their room and is now online
+2026-05-24 16:11:29 [INFO]: User connected: CMkalY7pjboyslCxAAAp
+2026-05-24 16:11:30 [INFO]: User 6a1307a936dae3fcbe24a388 is now offline
+2026-05-24 16:11:30 [INFO]: User disconnected: unRFg62Qjs4QPPv3AAAn
+2026-05-24 16:11:30 [INFO]: User 6a1307a936dae3fcbe24a388 joined their room and is now online
+2026-05-24 16:11:45 [INFO]: Email sent to offline user: test@email.com
+2026-05-24 16:11:46 [INFO]: User connected: r3XAdOemPkanN4KiAAAr
+2026-05-24 16:11:47 [INFO]: User 6a11e1de0f19705178b4874a joined their room and is now online
+2026-05-24 16:11:51 [INFO]: User connected: tVZTB8kL1dQMAjqkAAAt
+2026-05-24 16:11:56 [INFO]: User 6a11e1de0f19705178b4874a joined their room and is now online
+2026-05-24 16:11:56 [INFO]: User 6a11e1de0f19705178b4874a is now offline
+2026-05-24 16:11:56 [INFO]: User disconnected: r3XAdOemPkanN4KiAAAr
+2026-05-24 16:12:09 [INFO]: User 6a11e1de0f19705178b4874a is now offline
+2026-05-24 16:12:09 [INFO]: User disconnected: tVZTB8kL1dQMAjqkAAAt
+2026-05-24 16:12:19 [INFO]: User 6a1307a936dae3fcbe24a388 is now offline
+2026-05-24 16:12:19 [INFO]: User disconnected: CMkalY7pjboyslCxAAAp
+2026-05-24 16:13:13 [INFO]: User connected: 7gc41SRx9ZSRtNbsAAAv
+2026-05-24 16:13:13 [INFO]: User 6a1307a936dae3fcbe24a388 joined their room and is now online
+2026-05-24 16:13:13 [INFO]: User connected: i4SGtG4GW_egJBeHAAAx
+2026-05-24 16:13:13 [INFO]: User 6a1307a936dae3fcbe24a388 is now offline
+2026-05-24 16:13:13 [INFO]: User disconnected: 7gc41SRx9ZSRtNbsAAAv
+2026-05-24 16:13:13 [INFO]: User 6a1307a936dae3fcbe24a388 joined their room and is now online
+2026-05-24 16:13:28 [INFO]: User connected: nSbI2qT9m-V8GizMAAAz
+2026-05-24 16:13:28 [INFO]: User 6a11e1de0f19705178b4874a joined their room and is now online
+2026-05-24 16:13:28 [INFO]: User connected: hfGDdkgWguUgohR6AAA1
+2026-05-24 16:13:29 [INFO]: User 6a11e1de0f19705178b4874a is now offline
+2026-05-24 16:13:29 [INFO]: User disconnected: nSbI2qT9m-V8GizMAAAz
+2026-05-24 16:13:29 [INFO]: User 6a11e1de0f19705178b4874a joined their room and is now online
+2026-05-24 16:14:36 [INFO]: User 6a1307a936dae3fcbe24a388 is now offline
+2026-05-24 16:14:36 [INFO]: User disconnected: i4SGtG4GW_egJBeHAAAx
+2026-05-24 16:14:36 [INFO]: User connected: MhqvHVW7AFH3j2urAAA3
+2026-05-24 16:14:37 [INFO]: User 6a1307a936dae3fcbe24a388 joined their room and is now online
+2026-05-24 16:14:37 [INFO]: User connected: wHfKaN77Lt7T85i8AAA5
+2026-05-24 16:14:37 [INFO]: User 6a1307a936dae3fcbe24a388 is now offline
+2026-05-24 16:14:37 [INFO]: User disconnected: MhqvHVW7AFH3j2urAAA3
+2026-05-24 16:14:37 [INFO]: User 6a1307a936dae3fcbe24a388 joined their room and is now online
+2026-05-24 16:20:07 [INFO]: User 6a11e1de0f19705178b4874a is now offline
+2026-05-24 16:20:07 [INFO]: User disconnected: hfGDdkgWguUgohR6AAA1
+2026-05-24 16:26:38 [INFO]: User connected: uLxWcvz49CQ_QS-KAAA7
+2026-05-24 16:26:54 [INFO]: User disconnected: uLxWcvz49CQ_QS-KAAA7
+2026-05-24 16:26:55 [INFO]: User connected: cjzy-yk4Y2yAWbq6AAA9
+2026-05-24 16:27:14 [ERROR]: Unhandled Rejection: read ECONNRESET
+2026-05-24 16:27:14 [ERROR]: MongoNetworkError: read ECONNRESET
+    at Connection.onSocketError (C:\nodejsservers\worknoon-chat-backend\node_modules\mongodb\lib\cmap\connection.js:124:22)
+    at TLSSocket.emit (node:events:520:35)
+    at emitErrorNT (node:internal/streams/destroy:170:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:129:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:89:21)
+2026-05-24 16:27:19 [INFO]: User connected: uo95zVoJSGktYQJyAAA_
+2026-05-24 16:27:47 [ERROR]: Unhandled Rejection: getaddrinfo ENOTFOUND ac-blxffz2-shard-00-01.gqcrdvt.mongodb.net
+2026-05-24 16:27:47 [ERROR]: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-blxffz2-shard-00-01.gqcrdvt.mongodb.net
+    at Topology.selectServer (C:\nodejsservers\worknoon-chat-backend\node_modules\mongodb\lib\sdam\topology.js:348:38)
+    at async executeOperationWithRetries (C:\nodejsservers\worknoon-chat-backend\node_modules\mongodb\lib\operations\execute_operation.js:157:18)
+    at async executeOperation (C:\nodejsservers\worknoon-chat-backend\node_modules\mongodb\lib\operations\execute_operation.js:83:16)
+    at async Collection.findOneAndUpdate (C:\nodejsservers\worknoon-chat-backend\node_modules\mongodb\lib\collection.js:544:16)
+    at async model.Query._findOneAndUpdate (C:\nodejsservers\worknoon-chat-backend\node_modules\mongoose\lib\query.js:3621:13)
+    at async model.Query.exec (C:\nodejsservers\worknoon-chat-backend\node_modules\mongoose\lib\query.js:4797:63)
+    at async Socket.<anonymous> (C:\nodejsservers\worknoon-chat-backend\server.js:132:7)
+2026-05-24 16:27:49 [ERROR]: Unhandled Rejection: getaddrinfo ENOTFOUND ac-blxffz2-shard-00-01.gqcrdvt.mongodb.net
+2026-05-24 16:27:49 [ERROR]: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-blxffz2-shard-00-01.gqcrdvt.mongodb.net
+    at Topology.selectServer (C:\nodejsservers\worknoon-chat-backend\node_modules\mongodb\lib\sdam\topology.js:348:38)
+    at async executeOperationWithRetries (C:\nodejsservers\worknoon-chat-backend\node_modules\mongodb\lib\operations\execute_operation.js:157:18)
+    at async executeOperation (C:\nodejsservers\worknoon-chat-backend\node_modules\mongodb\lib\operations\execute_operation.js:83:16)
+    at async Collection.findOneAndUpdate (C:\nodejsservers\worknoon-chat-backend\node_modules\mongodb\lib\collection.js:544:16)
+    at async model.Query._findOneAndUpdate (C:\nodejsservers\worknoon-chat-backend\node_modules\mongoose\lib\query.js:3621:13)
+    at async model.Query.exec (C:\nodejsservers\worknoon-chat-backend\node_modules\mongoose\lib\query.js:4797:63)
+    at async Socket.<anonymous> (C:\nodejsservers\worknoon-chat-backend\server.js:71:5)
+2026-05-24 16:28:23 [ERROR]: Unhandled Rejection: connection <monitor> to 65.62.0.16:27017 closed
+2026-05-24 16:28:23 [ERROR]: MongoServerSelectionError: connection <monitor> to 65.62.0.16:27017 closed
+    at Topology.selectServer (C:\nodejsservers\worknoon-chat-backend\node_modules\mongodb\lib\sdam\topology.js:348:38)
+    at runNextTicks (node:internal/process/task_queues:64:5)
+    at process.processTimers (node:internal/timers:538:9)
+    at async executeOperationWithRetries (C:\nodejsservers\worknoon-chat-backend\node_modules\mongodb\lib\operations\execute_operation.js:157:18)
+    at async executeOperation (C:\nodejsservers\worknoon-chat-backend\node_modules\mongodb\lib\operations\execute_operation.js:83:16)
+    at async Collection.findOneAndUpdate (C:\nodejsservers\worknoon-chat-backend\node_modules\mongodb\lib\collection.js:544:16)
+    at async model.Query._findOneAndUpdate (C:\nodejsservers\worknoon-chat-backend\node_modules\mongoose\lib\query.js:3621:13)
+    at async model.Query.exec (C:\nodejsservers\worknoon-chat-backend\node_modules\mongoose\lib\query.js:4797:63)
+    at async Socket.<anonymous> (C:\nodejsservers\worknoon-chat-backend\server.js:132:7)
+2026-05-24 16:28:40 [INFO]: User 6a1307a936dae3fcbe24a388 is now offline
+2026-05-24 16:28:40 [INFO]: User disconnected: uo95zVoJSGktYQJyAAA_
+2026-05-24 16:29:10 [INFO]: User connected: J98ciuv9inX8gdO7AABB
+2026-05-24 16:29:10 [INFO]: User 6a1307a936dae3fcbe24a388 joined their room and is now online
+2026-05-24 16:29:12 [INFO]: User connected: Pfor2gKLiQdfJGt9AABD
+2026-05-24 16:29:13 [INFO]: User 6a1307a936dae3fcbe24a388 joined their room and is now online
+2026-05-24 16:29:13 [INFO]: User 6a1307a936dae3fcbe24a388 is now offline
+2026-05-24 16:29:13 [INFO]: User disconnected: J98ciuv9inX8gdO7AABB
+2026-05-24 16:29:36 [INFO]: Email sent to offline user: charlesgodwin54@gmail.com
+2026-05-24 16:29:48 [INFO]: User 6a1307a936dae3fcbe24a388 is now offline
+2026-05-24 16:29:48 [INFO]: User disconnected: Pfor2gKLiQdfJGt9AABD
+2026-05-24 16:30:03 [INFO]: User connected: xT7hioqmtzIozvlkAABF
+2026-05-24 16:30:03 [INFO]: User 6a11e1de0f19705178b4874a joined their room and is now online
+2026-05-24 16:30:04 [INFO]: User connected: a1kUpvnWX7RplqBMAABH
+2026-05-24 16:30:05 [INFO]: User 6a11e1de0f19705178b4874a joined their room and is now online
+2026-05-24 16:30:05 [INFO]: User 6a11e1de0f19705178b4874a is now offline
+2026-05-24 16:30:05 [INFO]: User disconnected: xT7hioqmtzIozvlkAABF
+2026-05-24 16:30:11 [INFO]: User connected: fFD__yrGIdFMkEshAABJ
+2026-05-24 16:30:12 [INFO]: User 6a1307a936dae3fcbe24a388 joined their room and is now online
+2026-05-24 16:30:12 [INFO]: User connected: dJZCLsiYMBgqFFDAAABL
+2026-05-24 16:30:12 [INFO]: User 6a1307a936dae3fcbe24a388 joined their room and is now online
+2026-05-24 16:30:13 [INFO]: User 6a1307a936dae3fcbe24a388 is now offline
+2026-05-24 16:30:13 [INFO]: User disconnected: fFD__yrGIdFMkEshAABJ
+2026-05-24 16:30:21 [INFO]: User 6a11e1de0f19705178b4874a is now offline
+2026-05-24 16:30:21 [INFO]: User disconnected: a1kUpvnWX7RplqBMAABH
+2026-05-24 16:30:25 [INFO]: User connected: pQJroU2wK-Tf32XwAABN
+2026-05-24 16:30:26 [INFO]: User 6a11e1de0f19705178b4874a joined their room and is now online
+2026-05-24 16:30:26 [INFO]: User connected: txwJLKIDjk3llTDfAABP
+2026-05-24 16:30:26 [INFO]: User 6a11e1de0f19705178b4874a is now offline
+2026-05-24 16:30:26 [INFO]: User disconnected: pQJroU2wK-Tf32XwAABN
+2026-05-24 16:30:26 [INFO]: User 6a11e1de0f19705178b4874a joined their room and is now online
+2026-05-24 16:33:32 [INFO]: User 6a11e1de0f19705178b4874a is now offline
+2026-05-24 16:33:32 [INFO]: User disconnected: txwJLKIDjk3llTDfAABP
+2026-05-24 16:33:51 [INFO]: Email sent to offline user: charlesgodwin54@gmail.com
+2026-05-24 16:33:56 [INFO]: User connected: I-qn_A7ClplKM4UuAABR
+2026-05-24 16:33:56 [INFO]: User 6a11e1de0f19705178b4874a joined their room and is now online
+2026-05-24 16:33:57 [INFO]: User connected: 7AMjNu3kDRqk_1xiAABT
+2026-05-24 16:33:57 [INFO]: User 6a11e1de0f19705178b4874a joined their room and is now online
+2026-05-24 16:33:57 [INFO]: User 6a11e1de0f19705178b4874a is now offline
+2026-05-24 16:33:57 [INFO]: User disconnected: I-qn_A7ClplKM4UuAABR
+2026-05-24 16:34:04 [INFO]: User 6a11e1de0f19705178b4874a is now offline
+2026-05-24 16:34:04 [INFO]: User disconnected: 7AMjNu3kDRqk_1xiAABT
+2026-05-24 16:36:15 [INFO]: User connected: 2qOy0T5AILJs5dh3AABV
+2026-05-24 16:36:24 [INFO]: User 6a11e1de0f19705178b4874a joined their room and is now online
+2026-05-24 16:36:40 [INFO]: User connected: F-IrmRlOMNMsR8WbAABX
+2026-05-24 16:37:04 [INFO]: User connected: cEK3DGWk-O-I5h42AABZ
+2026-05-24 16:37:06 [INFO]: User 6a11e1de0f19705178b4874a is now offline
+2026-05-24 16:37:06 [INFO]: User disconnected: 2qOy0T5AILJs5dh3AABV
+2026-05-24 16:37:11 [INFO]: User 6a11e1de0f19705178b4874a joined their room and is now online
+2026-05-24 16:37:11 [INFO]: User 6a11e1de0f19705178b4874a joined their room and is now online
+2026-05-24 16:38:04 [ERROR]: Unhandled Rejection: connection <monitor> to 65.62.0.16:27017 closed
+2026-05-24 16:38:04 [ERROR]: MongoServerSelectionError: connection <monitor> to 65.62.0.16:27017 closed
+    at Topology.selectServer (C:\nodejsservers\worknoon-chat-backend\node_modules\mongodb\lib\sdam\topology.js:348:38)
+    at runNextTicks (node:internal/process/task_queues:64:5)
+    at listOnTimeout (node:internal/timers:567:9)
+    at process.processTimers (node:internal/timers:541:7)
+    at async executeOperationWithRetries (C:\nodejsservers\worknoon-chat-backend\node_modules\mongodb\lib\operations\execute_operation.js:260:22)
+    at async executeOperation (C:\nodejsservers\worknoon-chat-backend\node_modules\mongodb\lib\operations\execute_operation.js:83:16)
+    at async Collection.findOneAndUpdate (C:\nodejsservers\worknoon-chat-backend\node_modules\mongodb\lib\collection.js:544:16)
+    at async model.Query._findOneAndUpdate (C:\nodejsservers\worknoon-chat-backend\node_modules\mongoose\lib\query.js:3621:13)
+    at async model.Query.exec (C:\nodejsservers\worknoon-chat-backend\node_modules\mongoose\lib\query.js:4797:63)
+    at async Socket.<anonymous> (C:\nodejsservers\worknoon-chat-backend\server.js:71:5)
+2026-05-24 16:38:04 [ERROR]: Unhandled Rejection: connection <monitor> to 65.62.0.16:27017 closed
+2026-05-24 16:38:04 [ERROR]: MongoServerSelectionError: connection <monitor> to 65.62.0.16:27017 closed
+    at Topology.selectServer (C:\nodejsservers\worknoon-chat-backend\node_modules\mongodb\lib\sdam\topology.js:348:38)
+    at async executeOperationWithRetries (C:\nodejsservers\worknoon-chat-backend\node_modules\mongodb\lib\operations\execute_operation.js:260:22)
+    at async executeOperation (C:\nodejsservers\worknoon-chat-backend\node_modules\mongodb\lib\operations\execute_operation.js:83:16)
+    at async Collection.findOneAndUpdate (C:\nodejsservers\worknoon-chat-backend\node_modules\mongodb\lib\collection.js:544:16)
+    at async model.Query._findOneAndUpdate (C:\nodejsservers\worknoon-chat-backend\node_modules\mongoose\lib\query.js:3621:13)
+    at async model.Query.exec (C:\nodejsservers\worknoon-chat-backend\node_modules\mongoose\lib\query.js:4797:63)
+    at async Socket.<anonymous> (C:\nodejsservers\worknoon-chat-backend\server.js:71:5)
+2026-05-24 16:38:12 [ERROR]: Unhandled Rejection: connection <monitor> to 65.62.0.16:27017 closed
+2026-05-24 16:38:12 [ERROR]: MongoServerSelectionError: connection <monitor> to 65.62.0.16:27017 closed
+    at Topology.selectServer (C:\nodejsservers\worknoon-chat-backend\node_modules\mongodb\lib\sdam\topology.js:348:38)
+    at async executeOperationWithRetries (C:\nodejsservers\worknoon-chat-backend\node_modules\mongodb\lib\operations\execute_operation.js:260:22)
+    at async executeOperation (C:\nodejsservers\worknoon-chat-backend\node_modules\mongodb\lib\operations\execute_operation.js:83:16)
+    at async Collection.findOneAndUpdate (C:\nodejsservers\worknoon-chat-backend\node_modules\mongodb\lib\collection.js:544:16)
+    at async model.Query._findOneAndUpdate (C:\nodejsservers\worknoon-chat-backend\node_modules\mongoose\lib\query.js:3621:13)
+    at async model.Query.exec (C:\nodejsservers\worknoon-chat-backend\node_modules\mongoose\lib\query.js:4797:63)
+    at async Socket.<anonymous> (C:\nodejsservers\worknoon-chat-backend\server.js:132:7)
+2026-05-24 16:39:46 [INFO]: User connected: nX-RvjyrMzt0JXXkAABb
+2026-05-24 16:39:48 [INFO]: User connected: ROzhsJZYj-Hs8WX_AABd
+2026-05-24 16:40:22 [INFO]: User 6a11e1de0f19705178b4874a joined their room and is now online
+2026-05-24 16:40:22 [INFO]: User 6a1307a936dae3fcbe24a388 joined their room and is now online
+2026-05-24 16:40:23 [INFO]: User 6a1307a936dae3fcbe24a388 joined their room and is now online
+2026-05-24 16:40:23 [INFO]: User 6a1307a936dae3fcbe24a388 is now offline
+2026-05-24 16:40:23 [INFO]: User disconnected: cEK3DGWk-O-I5h42AABZ
+2026-05-24 16:40:23 [INFO]: User 6a11e1de0f19705178b4874a is now offline
+2026-05-24 16:40:23 [INFO]: User disconnected: F-IrmRlOMNMsR8WbAABX
+2026-05-24 16:40:24 [INFO]: User 6a11e1de0f19705178b4874a joined their room and is now online
+2026-05-24 16:40:27 [INFO]: User 6a1307a936dae3fcbe24a388 is now offline
+2026-05-24 16:40:27 [INFO]: User disconnected: ROzhsJZYj-Hs8WX_AABd
+2026-05-24 16:40:28 [INFO]: User connected: O7kofE3SL4K-Wi7XAABf
+2026-05-24 16:40:28 [INFO]: User 6a1307a936dae3fcbe24a388 joined their room and is now online
+2026-05-24 16:40:29 [INFO]: User 6a1307a936dae3fcbe24a388 joined their room and is now online
+2026-05-24 16:40:33 [INFO]: User 6a1307a936dae3fcbe24a388 is now offline
+2026-05-24 16:40:33 [INFO]: User disconnected: O7kofE3SL4K-Wi7XAABf
+2026-05-24 16:40:38 [INFO]: User connected: Y9CVhAzPAz-1bBzkAABh
+2026-05-24 16:40:39 [INFO]: User 6a1307a936dae3fcbe24a388 joined their room and is now online
+2026-05-24 16:40:39 [INFO]: User 6a1307a936dae3fcbe24a388 joined their room and is now online
+2026-05-24 16:40:54 [INFO]: User 6a11e1de0f19705178b4874a is now offline
+2026-05-24 16:40:54 [INFO]: User disconnected: nX-RvjyrMzt0JXXkAABb
+2026-05-24 16:41:00 [INFO]: User 6a1307a936dae3fcbe24a388 is now offline
+2026-05-24 16:41:00 [INFO]: User disconnected: Y9CVhAzPAz-1bBzkAABh
+2026-05-24 16:41:06 [INFO]: User connected: S4qOfV-KXuRuinTQAABj
+2026-05-24 16:41:06 [INFO]: User 6a1307a936dae3fcbe24a388 joined their room and is now online
+2026-05-24 16:41:06 [INFO]: User 6a1307a936dae3fcbe24a388 joined their room and is now online
+2026-05-24 16:42:37 [INFO]: User 6a1307a936dae3fcbe24a388 is now offline
+2026-05-24 16:42:38 [INFO]: User disconnected: S4qOfV-KXuRuinTQAABj
+2026-05-24 16:42:39 [INFO]: User connected: YJ8zHL9341pgXPzXAABl
+2026-05-24 16:42:40 [INFO]: User 6a1307a936dae3fcbe24a388 joined their room and is now online
+2026-05-24 16:42:40 [INFO]: User 6a1307a936dae3fcbe24a388 joined their room and is now online
+2026-05-24 16:42:41 [INFO]: User connected: fdSXGBN3ZO3eju9UAABn
+2026-05-24 16:42:41 [INFO]: User 6a1307a936dae3fcbe24a388 joined their room and is now online
+2026-05-24 16:42:41 [INFO]: User 6a1307a936dae3fcbe24a388 is now offline
+2026-05-24 16:42:41 [INFO]: User disconnected: YJ8zHL9341pgXPzXAABl
+2026-05-24 16:42:41 [INFO]: User 6a1307a936dae3fcbe24a388 joined their room and is now online
+2026-05-24 16:42:56 [INFO]: User connected: uWnIf_KrdmOOQ73gAABp
+2026-05-24 16:42:57 [INFO]: User 6a11e1de0f19705178b4874a joined their room and is now online
+2026-05-24 16:42:57 [INFO]: User 6a11e1de0f19705178b4874a joined their room and is now online
+2026-05-24 16:43:00 [INFO]: User 6a11e1de0f19705178b4874a is now offline
+2026-05-24 16:43:00 [INFO]: User disconnected: uWnIf_KrdmOOQ73gAABp
+2026-05-24 16:43:01 [INFO]: User connected: Q49xCmPZOxiy8ieJAABr
+2026-05-24 16:43:01 [INFO]: User 6a11e1de0f19705178b4874a joined their room and is now online
+2026-05-24 16:43:01 [INFO]: User 6a11e1de0f19705178b4874a joined their room and is now online
+2026-05-24 16:43:03 [INFO]: User 6a11e1de0f19705178b4874a is now offline
+2026-05-24 16:43:03 [INFO]: User disconnected: Q49xCmPZOxiy8ieJAABr
+2026-05-24 16:43:03 [INFO]: User connected: 7WVxKY3VQ_ezIcHZAABt
+2026-05-24 16:43:04 [INFO]: User 6a11e1de0f19705178b4874a joined their room and is now online
+2026-05-24 16:43:04 [INFO]: User 6a11e1de0f19705178b4874a joined their room and is now online
+2026-05-24 16:43:14 [INFO]: User 6a11e1de0f19705178b4874a is now offline
+2026-05-24 16:43:14 [INFO]: User disconnected: 7WVxKY3VQ_ezIcHZAABt
+2026-05-24 16:43:18 [INFO]: User connected: IIIpLOWLbU6RSCc3AABv
+2026-05-24 16:43:18 [INFO]: User 6a11e1de0f19705178b4874a joined their room and is now online
+2026-05-24 16:43:18 [INFO]: User 6a11e1de0f19705178b4874a joined their room and is now online
+2026-05-24 16:43:18 [INFO]: User connected: ECBSPodkSEK3v1gAAABx
+2026-05-24 16:43:19 [INFO]: User 6a11e1de0f19705178b4874a is now offline
+2026-05-24 16:43:19 [INFO]: User disconnected: IIIpLOWLbU6RSCc3AABv
+2026-05-24 16:43:19 [INFO]: User 6a11e1de0f19705178b4874a joined their room and is now online
+2026-05-24 16:43:19 [INFO]: User 6a11e1de0f19705178b4874a joined their room and is now online
+2026-05-24 16:43:58 [INFO]: User 6a11e1de0f19705178b4874a is now offline
+2026-05-24 16:43:58 [INFO]: User disconnected: ECBSPodkSEK3v1gAAABx
+2026-05-24 16:44:02 [INFO]: User connected: Hsssjd2Tfe09U0Q2AABz
+2026-05-24 16:44:05 [INFO]: User 6a11e1de0f19705178b4874a joined their room and is now online
+2026-05-24 16:44:06 [INFO]: User 6a11e1de0f19705178b4874a joined their room and is now online
+2026-05-24 16:44:10 [INFO]: User connected: ZVmJ-dKyoIhDhxQWAAB1
+2026-05-24 16:44:11 [INFO]: User 6a11e1de0f19705178b4874a joined their room and is now online
+2026-05-24 16:44:11 [INFO]: User 6a11e1de0f19705178b4874a is now offline
+2026-05-24 16:44:11 [INFO]: User disconnected: Hsssjd2Tfe09U0Q2AABz
+2026-05-24 16:44:11 [INFO]: User 6a11e1de0f19705178b4874a joined their room and is now online
+2026-05-24 16:44:20 [INFO]: User 6a1307a936dae3fcbe24a388 is now offline
+2026-05-24 16:44:20 [INFO]: User disconnected: fdSXGBN3ZO3eju9UAABn
+2026-05-24 16:44:22 [INFO]: User connected: MI72mMUT-PxnSZbOAAB3
+2026-05-24 16:44:22 [INFO]: User 6a1307a936dae3fcbe24a388 joined their room and is now online
+2026-05-24 16:44:22 [INFO]: User 6a1307a936dae3fcbe24a388 joined their room and is now online
+2026-05-24 16:44:23 [INFO]: User connected: XX5lqoV-1oIEJQ2OAAB5
+2026-05-24 16:44:23 [INFO]: User 6a1307a936dae3fcbe24a388 is now offline
+2026-05-24 16:44:23 [INFO]: User disconnected: MI72mMUT-PxnSZbOAAB3
+2026-05-24 16:44:23 [INFO]: User 6a1307a936dae3fcbe24a388 joined their room and is now online
+2026-05-24 16:44:23 [INFO]: User 6a1307a936dae3fcbe24a388 joined their room and is now online
+2026-05-24 16:44:26 [INFO]: User 6a1307a936dae3fcbe24a388 is now offline
+2026-05-24 16:44:26 [INFO]: User disconnected: XX5lqoV-1oIEJQ2OAAB5
+2026-05-24 16:44:29 [INFO]: User connected: epudtPp8n_G-2zgcAAB7
+2026-05-24 16:44:30 [INFO]: User 6a1307a936dae3fcbe24a388 joined their room and is now online
+2026-05-24 16:44:30 [INFO]: User 6a1307a936dae3fcbe24a388 joined their room and is now online
+2026-05-24 16:44:32 [INFO]: User connected: c2NnJh5nMR_b1O_5AAB9
+2026-05-24 16:44:32 [INFO]: User 6a1307a936dae3fcbe24a388 is now offline
+2026-05-24 16:44:32 [INFO]: User disconnected: epudtPp8n_G-2zgcAAB7
+2026-05-24 16:44:33 [INFO]: User 6a1307a936dae3fcbe24a388 joined their room and is now online
+2026-05-24 16:44:33 [INFO]: User 6a1307a936dae3fcbe24a388 joined their room and is now online
+2026-05-24 16:44:36 [INFO]: User 6a1307a936dae3fcbe24a388 is now offline
+2026-05-24 16:44:36 [INFO]: User disconnected: c2NnJh5nMR_b1O_5AAB9
+2026-05-24 16:44:40 [INFO]: User 6a11e1de0f19705178b4874a is now offline
+2026-05-24 16:44:40 [INFO]: User disconnected: ZVmJ-dKyoIhDhxQWAAB1
+2026-05-24 16:44:54 [INFO]: User connected: MT0l0AKy0p3yBoC1AAB_
+2026-05-24 16:44:54 [INFO]: User 6a1307a936dae3fcbe24a388 joined their room and is now online
+2026-05-24 16:44:54 [INFO]: User 6a1307a936dae3fcbe24a388 joined their room and is now online
+2026-05-24 16:44:55 [INFO]: User connected: I3qUcjDxk7OjaN41AACB
+2026-05-24 16:44:55 [INFO]: User 6a1307a936dae3fcbe24a388 joined their room and is now online
+2026-05-24 16:44:55 [INFO]: User 6a1307a936dae3fcbe24a388 is now offline
+2026-05-24 16:44:55 [INFO]: User disconnected: MT0l0AKy0p3yBoC1AAB_
+2026-05-24 16:44:56 [INFO]: User 6a1307a936dae3fcbe24a388 joined their room and is now online
+2026-05-24 16:45:14 [INFO]: User connected: z2t3zg1x4NaBp6X2AACD
+2026-05-24 16:45:15 [INFO]: User 6a11e1de0f19705178b4874a joined their room and is now online
+2026-05-24 16:45:15 [INFO]: User 6a11e1de0f19705178b4874a joined their room and is now online
+2026-05-24 16:45:15 [INFO]: User connected: GetTQLXuM3YdUHmdAACF
+2026-05-24 16:45:16 [INFO]: User 6a11e1de0f19705178b4874a is now offline
+2026-05-24 16:45:16 [INFO]: User disconnected: z2t3zg1x4NaBp6X2AACD
+2026-05-24 16:45:16 [INFO]: User 6a11e1de0f19705178b4874a joined their room and is now online
+2026-05-24 16:45:16 [INFO]: User 6a11e1de0f19705178b4874a joined their room and is now online
+2026-05-24 16:51:05 [INFO]: User 6a11e1de0f19705178b4874a is now offline
+2026-05-24 16:51:05 [INFO]: User disconnected: GetTQLXuM3YdUHmdAACF
+2026-05-24 16:51:15 [INFO]: User connected: Eh4SNUnJzV8avxFKAACH
+2026-05-24 16:51:17 [INFO]: User connected: QL00z1BvXrZ1VUwyAACJ
+2026-05-24 16:51:22 [INFO]: User 6a1307a936dae3fcbe24a388 is now offline
+2026-05-24 16:51:23 [INFO]: User disconnected: I3qUcjDxk7OjaN41AACB
+2026-05-24 16:51:23 [INFO]: User 6a1307a936dae3fcbe24a388 joined their room and is now online
+2026-05-24 16:51:25 [INFO]: User disconnected: Eh4SNUnJzV8avxFKAACH
+2026-05-24 16:51:29 [INFO]: User connected: -y95Ky0-7nJG7q7uAACL
+2026-05-24 16:51:34 [INFO]: User connected: EwBBw_PQxLqvkO_kAACN
+2026-05-24 16:51:34 [INFO]: User 6a11e1de0f19705178b4874a joined their room and is now online
+2026-05-24 16:51:38 [INFO]: User 6a1307a936dae3fcbe24a388 joined their room and is now online
+2026-05-24 16:51:38 [INFO]: User 6a1307a936dae3fcbe24a388 is now offline
+2026-05-24 16:51:38 [INFO]: User disconnected: QL00z1BvXrZ1VUwyAACJ
+2026-05-24 16:51:39 [INFO]: User 6a1307a936dae3fcbe24a388 joined their room and is now online
+2026-05-24 16:51:39 [INFO]: User 6a1307a936dae3fcbe24a388 joined their room and is now online
+2026-05-24 16:51:44 [INFO]: User 6a11e1de0f19705178b4874a joined their room and is now online
+2026-05-24 16:51:45 [INFO]: User connected: VyHe58wLGeVVtOgdAACP
+2026-05-24 16:51:45 [INFO]: User 6a11e1de0f19705178b4874a is now offline
+2026-05-24 16:51:45 [INFO]: User disconnected: -y95Ky0-7nJG7q7uAACL
+2026-05-24 16:51:45 [INFO]: User 6a11e1de0f19705178b4874a joined their room and is now online
+2026-05-24 16:51:46 [INFO]: User 6a11e1de0f19705178b4874a joined their room and is now online
+2026-05-24 16:58:33 [INFO]: Server running on port 5000
+2026-05-24 16:58:33 [INFO]: User connected: ASCosLKco3s9AVADAAAB
+2026-05-24 16:58:35 [INFO]: User connected: VYg8uzNdS_OBIJmVAAAD
+2026-05-24 16:58:41 [INFO]: MongoDB connected
+2026-05-24 16:59:27 [INFO]: User disconnected: VYg8uzNdS_OBIJmVAAAD
+2026-05-24 17:02:58 [INFO]: User disconnected: ASCosLKco3s9AVADAAAB
+2026-05-24 17:03:03 [INFO]: User connected: ogrUD2hD7xpaBG9HAAAF
+2026-05-24 17:03:03 [INFO]: User 6a1307a936dae3fcbe24a388 joined conversation room: 6a13158971b0b58a02fe3c03
+2026-05-24 17:03:04 [INFO]: User connected: 8iJi9VE7rJU1pOccAAAH
+2026-05-24 17:03:04 [INFO]: User 6a1307a936dae3fcbe24a388 joined conversation room: 6a13158971b0b58a02fe3c03
+2026-05-24 17:03:04 [INFO]: User 6a1307a936dae3fcbe24a388 is now offline
+2026-05-24 17:03:04 [INFO]: User disconnected: ogrUD2hD7xpaBG9HAAAF
+2026-05-24 17:03:04 [INFO]: User 6a1307a936dae3fcbe24a388 joined their room and is now online
+2026-05-24 17:03:05 [INFO]: User 6a1307a936dae3fcbe24a388 joined their room and is now online
+2026-05-24 17:03:33 [INFO]: User connected: PFQYb5xGeTv3GGrAAAAJ
+2026-05-24 17:03:33 [INFO]: User 6a11e1de0f19705178b4874a joined conversation room: 6a13158971b0b58a02fe3c03
+2026-05-24 17:03:33 [INFO]: User 6a11e1de0f19705178b4874a joined their room and is now online
+2026-05-24 17:03:34 [INFO]: User connected: aCofnlgezcmPscTBAAAL
+2026-05-24 17:03:34 [INFO]: User 6a11e1de0f19705178b4874a joined conversation room: 6a13158971b0b58a02fe3c03
+2026-05-24 17:03:34 [INFO]: User 6a11e1de0f19705178b4874a is now offline
+2026-05-24 17:03:34 [INFO]: User disconnected: PFQYb5xGeTv3GGrAAAAJ
+2026-05-24 17:03:34 [INFO]: User 6a11e1de0f19705178b4874a joined their room and is now online
+2026-05-24 17:11:00 [INFO]: User 6a1307a936dae3fcbe24a388 is now offline
+2026-05-24 17:11:00 [INFO]: User disconnected: 8iJi9VE7rJU1pOccAAAH
+2026-05-24 17:11:01 [INFO]: User connected: Bfq8JgpUPrsywqFNAAAN
+2026-05-24 17:11:01 [INFO]: User 6a1307a936dae3fcbe24a388 joined conversation room: 6a13158971b0b58a02fe3c03
+2026-05-24 17:11:01 [INFO]: User 6a1307a936dae3fcbe24a388 joined their room and is now online
+2026-05-24 17:11:02 [INFO]: User connected: XxJWuX7-8XYwcdBrAAAP
+2026-05-24 17:11:02 [INFO]: User 6a1307a936dae3fcbe24a388 joined conversation room: 6a13158971b0b58a02fe3c03
+2026-05-24 17:11:02 [INFO]: User 6a1307a936dae3fcbe24a388 is now offline
+2026-05-24 17:11:02 [INFO]: User disconnected: Bfq8JgpUPrsywqFNAAAN
+2026-05-24 17:11:03 [INFO]: User 6a1307a936dae3fcbe24a388 joined their room and is now online
+2026-05-24 17:13:42 [INFO]: User connected: MpOoHVFO3bQcYBoVAAAR
+2026-05-24 17:13:42 [INFO]: User 6a1307a936dae3fcbe24a388 joined conversation room: 6a13158971b0b58a02fe3c03
+2026-05-24 17:13:47 [INFO]: User 6a1307a936dae3fcbe24a388 is now offline
+2026-05-24 17:13:47 [INFO]: User disconnected: XxJWuX7-8XYwcdBrAAAP
+2026-05-24 17:13:47 [INFO]: User 6a1307a936dae3fcbe24a388 joined their room and is now online
+2026-05-24 17:13:47 [INFO]: User connected: 7bcPhKRqVsp5o7woAAAT
+2026-05-24 17:13:47 [INFO]: User 6a11e1de0f19705178b4874a joined conversation room: 6a13158971b0b58a02fe3c03
+2026-05-24 17:13:59 [INFO]: User connected: yVTqgWHBfAKc3FzQAAAV
+2026-05-24 17:13:59 [INFO]: User connected: 3x6Ss3_t7nEvhdX2AAAX
+2026-05-24 17:13:59 [INFO]: User 6a1307a936dae3fcbe24a388 joined conversation room: 6a13158971b0b58a02fe3c03
+2026-05-24 17:13:59 [INFO]: User 6a11e1de0f19705178b4874a joined conversation room: 6a13158971b0b58a02fe3c03
+2026-05-24 17:14:07 [INFO]: User 6a11e1de0f19705178b4874a is now offline
+2026-05-24 17:14:07 [INFO]: User disconnected: 7bcPhKRqVsp5o7woAAAT
+2026-05-24 17:14:08 [INFO]: User 6a1307a936dae3fcbe24a388 is now offline
+2026-05-24 17:14:08 [INFO]: User disconnected: MpOoHVFO3bQcYBoVAAAR
+2026-05-24 17:14:11 [INFO]: User 6a1307a936dae3fcbe24a388 joined their room and is now online
+2026-05-24 17:14:16 [INFO]: User 6a11e1de0f19705178b4874a joined their room and is now online
+2026-05-24 17:14:20 [INFO]: User 6a11e1de0f19705178b4874a joined their room and is now online
+2026-05-24 17:14:23 [INFO]: User 6a11e1de0f19705178b4874a is now offline
+2026-05-24 17:14:23 [INFO]: User disconnected: aCofnlgezcmPscTBAAAL
+2026-05-24 17:16:10 [INFO]: User 6a1307a936dae3fcbe24a388 is now offline
+2026-05-24 17:16:11 [INFO]: User disconnected: yVTqgWHBfAKc3FzQAAAV
+2026-05-24 17:16:11 [INFO]: User connected: 4j34zXX9lkMCt8iwAAAZ
+2026-05-24 17:16:12 [INFO]: User 6a1307a936dae3fcbe24a388 joined conversation room: 6a13158971b0b58a02fe3c03
+2026-05-24 17:16:12 [INFO]: User connected: 7ytl0o9TWHBJyxpgAAAb
+2026-05-24 17:16:12 [INFO]: User 6a1307a936dae3fcbe24a388 joined conversation room: 6a13158971b0b58a02fe3c03
+2026-05-24 17:16:12 [INFO]: User 6a1307a936dae3fcbe24a388 joined their room and is now online
+2026-05-24 17:16:12 [INFO]: User 6a1307a936dae3fcbe24a388 is now offline
+2026-05-24 17:16:12 [INFO]: User disconnected: 4j34zXX9lkMCt8iwAAAZ
+2026-05-24 17:16:13 [INFO]: User 6a1307a936dae3fcbe24a388 joined their room and is now online
+2026-05-24 17:16:17 [INFO]: User 6a11e1de0f19705178b4874a is now offline
+2026-05-24 17:16:17 [INFO]: User disconnected: 3x6Ss3_t7nEvhdX2AAAX
+2026-05-24 17:16:17 [INFO]: User connected: PhmjPcBuFtq8L81yAAAd
+2026-05-24 17:16:17 [INFO]: User 6a11e1de0f19705178b4874a joined conversation room: 6a13158971b0b58a02fe3c03
+2026-05-24 17:16:17 [INFO]: User 6a11e1de0f19705178b4874a joined their room and is now online
+2026-05-24 17:16:19 [INFO]: User connected: b_8xVqhpYRohB7FzAAAf
+2026-05-24 17:16:19 [INFO]: User 6a11e1de0f19705178b4874a joined conversation room: 6a13158971b0b58a02fe3c03
+2026-05-24 17:16:19 [INFO]: User 6a11e1de0f19705178b4874a joined their room and is now online
+2026-05-24 17:16:19 [INFO]: User 6a11e1de0f19705178b4874a is now offline
+2026-05-24 17:16:19 [INFO]: User disconnected: PhmjPcBuFtq8L81yAAAd
+2026-05-24 17:18:29 [INFO]: User connected: O0WSW2whC2Dk9TdLAAAh
+2026-05-24 17:18:29 [INFO]: User 6a1307a936dae3fcbe24a388 joined conversation room: 6a13158971b0b58a02fe3c03
+2026-05-24 17:18:29 [INFO]: User 6a1307a936dae3fcbe24a388 is now offline
+2026-05-24 17:18:29 [INFO]: User disconnected: 7ytl0o9TWHBJyxpgAAAb
+2026-05-24 17:18:30 [INFO]: User 6a1307a936dae3fcbe24a388 joined their room and is now online
+2026-05-24 17:18:30 [INFO]: User connected: dBWfqEt3JHSQTm_kAAAj
+2026-05-24 17:18:31 [INFO]: User 6a1307a936dae3fcbe24a388 joined conversation room: 6a13158971b0b58a02fe3c03
+2026-05-24 17:18:31 [INFO]: User 6a1307a936dae3fcbe24a388 joined their room and is now online
+2026-05-24 17:18:31 [INFO]: User 6a1307a936dae3fcbe24a388 is now offline
+2026-05-24 17:18:31 [INFO]: User disconnected: O0WSW2whC2Dk9TdLAAAh
+2026-05-24 17:18:34 [INFO]: User 6a11e1de0f19705178b4874a is now offline
+2026-05-24 17:18:34 [INFO]: User disconnected: b_8xVqhpYRohB7FzAAAf
+2026-05-24 17:18:34 [INFO]: User connected: fVclya3ptyzIuCw8AAAl
+2026-05-24 17:18:34 [INFO]: User 6a11e1de0f19705178b4874a joined conversation room: 6a13158971b0b58a02fe3c03
+2026-05-24 17:18:34 [INFO]: User 6a11e1de0f19705178b4874a joined their room and is now online
+2026-05-24 17:18:35 [INFO]: User connected: ooCybKtZr5n50-_yAAAn
+2026-05-24 17:18:36 [INFO]: User 6a11e1de0f19705178b4874a is now offline
+2026-05-24 17:18:36 [INFO]: User disconnected: fVclya3ptyzIuCw8AAAl
+2026-05-24 17:18:36 [INFO]: User 6a11e1de0f19705178b4874a joined conversation room: 6a13158971b0b58a02fe3c03
+2026-05-24 17:18:37 [INFO]: User 6a11e1de0f19705178b4874a joined their room and is now online
+2026-05-24 17:20:09 [INFO]: User connected: IgGkpqOB_i2EjgOKAAAp
+2026-05-24 17:20:09 [INFO]: User 6a1307a936dae3fcbe24a388 joined conversation room: 6a13158971b0b58a02fe3c03
+2026-05-24 17:20:12 [INFO]: User 6a1307a936dae3fcbe24a388 is now offline
+2026-05-24 17:20:12 [INFO]: User disconnected: dBWfqEt3JHSQTm_kAAAj
+2026-05-24 17:20:12 [INFO]: User 6a1307a936dae3fcbe24a388 joined their room and is now online
+2026-05-24 17:20:13 [INFO]: User connected: 9-ESVIxZlOcVGj4nAAAr
+2026-05-24 17:20:13 [INFO]: User 6a11e1de0f19705178b4874a joined conversation room: 6a13158971b0b58a02fe3c03
+2026-05-24 17:20:14 [INFO]: User 6a11e1de0f19705178b4874a is now offline
+2026-05-24 17:20:14 [INFO]: User disconnected: ooCybKtZr5n50-_yAAAn
+2026-05-24 17:20:15 [INFO]: User 6a11e1de0f19705178b4874a joined their room and is now online
+2026-05-24 17:20:16 [INFO]: User connected: ChitRM_AmOiEyzY7AAAt
+2026-05-24 17:20:17 [INFO]: User 6a1307a936dae3fcbe24a388 joined conversation room: 6a13158971b0b58a02fe3c03
+2026-05-24 17:20:18 [INFO]: User 6a1307a936dae3fcbe24a388 is now offline
+2026-05-24 17:20:18 [INFO]: User disconnected: IgGkpqOB_i2EjgOKAAAp
+2026-05-24 17:20:18 [INFO]: User 6a1307a936dae3fcbe24a388 joined their room and is now online
+2026-05-24 17:20:18 [INFO]: User connected: 993PJcplweFNdTstAAAv
+2026-05-24 17:20:18 [INFO]: User 6a11e1de0f19705178b4874a joined conversation room: 6a13158971b0b58a02fe3c03
+2026-05-24 17:20:18 [INFO]: User 6a11e1de0f19705178b4874a joined their room and is now online
+2026-05-24 17:20:18 [INFO]: User 6a11e1de0f19705178b4874a is now offline
+2026-05-24 17:20:18 [INFO]: User disconnected: 9-ESVIxZlOcVGj4nAAAr
+2026-05-24 17:31:28 [ERROR]: Uncaught Exception: auth is not defined
+ReferenceError: auth is not defined
+    at Object.<anonymous> (C:\nodejsservers\worknoon-chat-backend\routes\auth.js:79:24)
+    at Module._compile (node:internal/modules/cjs/loader:1760:14)
+    at Object..js (node:internal/modules/cjs/loader:1892:10)
+    at Module.load (node:internal/modules/cjs/loader:1480:32)
+    at Module._load (node:internal/modules/cjs/loader:1299:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1503:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (C:\nodejsservers\worknoon-chat-backend\server.js:146:22)
+2026-05-24 17:31:28 [INFO]: Server running on port 5000
+2026-05-24 17:31:28 [INFO]: User connected: d4QoVWp4pS3GisI7AAAC
+2026-05-24 17:31:28 [INFO]: User connected: 3tyIdskTJpzxCu8-AAAD
+2026-05-24 17:32:09 [ERROR]: MongoDB connection error: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/
+MongooseServerSelectionError: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/
+    at _handleConnectionErrors (C:\nodejsservers\worknoon-chat-backend\node_modules\mongoose\lib\connection.js:1180:11)
+    at NativeConnection.openUri (C:\nodejsservers\worknoon-chat-backend\node_modules\mongoose\lib\connection.js:1111:11) {"errorLabelSet":{},"reason":{"type":"ReplicaSetNoPrimary","servers":{"ac-blxffz2-shard-00-00.gqcrdvt.mongodb.net:27017":{"address":"ac-blxffz2-shard-00-00.gqcrdvt.mongodb.net:27017","type":"Unknown","hosts":[],"passives":[],"arbiters":[],"tags":{},"minWireVersion":0,"maxWireVersion":0,"roundTripTime":-1,"minRoundTripTime":0,"lastUpdateTime":30537,"lastWriteDate":0,"error":{"errorLabelSet":{},"beforeHandshake":false},"topologyVersion":null,"setName":null,"setVersion":null,"electionId":null,"logicalSessionTimeoutMinutes":null,"maxMessageSizeBytes":null,"maxWriteBatchSize":null,"maxBsonObjectSize":null,"primary":null,"me":null,"$clusterTime":null,"iscryptd":false},"ac-blxffz2-shard-00-01.gqcrdvt.mongodb.net:27017":{"address":"ac-blxffz2-shard-00-01.gqcrdvt.mongodb.net:27017","type":"Unknown","hosts":[],"passives":[],"arbiters":[],"tags":{},"minWireVersion":0,"maxWireVersion":0,"roundTripTime":-1,"minRoundTripTime":0,"lastUpdateTime":30546,"lastWriteDate":0,"error":{"errorLabelSet":{},"beforeHandshake":false},"topologyVersion":null,"setName":null,"setVersion":null,"electionId":null,"logicalSessionTimeoutMinutes":null,"maxMessageSizeBytes":null,"maxWriteBatchSize":null,"maxBsonObjectSize":null,"primary":null,"me":null,"$clusterTime":null,"iscryptd":false},"ac-blxffz2-shard-00-02.gqcrdvt.mongodb.net:27017":{"address":"ac-blxffz2-shard-00-02.gqcrdvt.mongodb.net:27017","type":"Unknown","hosts":[],"passives":[],"arbiters":[],"tags":{},"minWireVersion":0,"maxWireVersion":0,"roundTripTime":-1,"minRoundTripTime":0,"lastUpdateTime":41844,"lastWriteDate":0,"error":{"errorLabelSet":{},"beforeHandshake":false},"topologyVersion":null,"setName":null,"setVersion":null,"electionId":null,"logicalSessionTimeoutMinutes":null,"maxMessageSizeBytes":null,"maxWriteBatchSize":null,"maxBsonObjectSize":null,"primary":null,"me":null,"$clusterTime":null,"iscryptd":false}},"stale":false,"compatible":true,"heartbeatFrequencyMS":10000,"localThresholdMS":15,"setName":"atlas-3h6xgi-shard-0","maxElectionId":null,"maxSetVersion":null,"commonWireVersion":0,"logicalSessionTimeoutMinutes":null},"cause":{"type":"ReplicaSetNoPrimary","servers":{"ac-blxffz2-shard-00-00.gqcrdvt.mongodb.net:27017":{"address":"ac-blxffz2-shard-00-00.gqcrdvt.mongodb.net:27017","type":"Unknown","hosts":[],"passives":[],"arbiters":[],"tags":{},"minWireVersion":0,"maxWireVersion":0,"roundTripTime":-1,"minRoundTripTime":0,"lastUpdateTime":30537,"lastWriteDate":0,"error":{"errorLabelSet":{},"beforeHandshake":false},"topologyVersion":null,"setName":null,"setVersion":null,"electionId":null,"logicalSessionTimeoutMinutes":null,"maxMessageSizeBytes":null,"maxWriteBatchSize":null,"maxBsonObjectSize":null,"primary":null,"me":null,"$clusterTime":null,"iscryptd":false},"ac-blxffz2-shard-00-01.gqcrdvt.mongodb.net:27017":{"address":"ac-blxffz2-shard-00-01.gqcrdvt.mongodb.net:27017","type":"Unknown","hosts":[],"passives":[],"arbiters":[],"tags":{},"minWireVersion":0,"maxWireVersion":0,"roundTripTime":-1,"minRoundTripTime":0,"lastUpdateTime":30546,"lastWriteDate":0,"error":{"errorLabelSet":{},"beforeHandshake":false},"topologyVersion":null,"setName":null,"setVersion":null,"electionId":null,"logicalSessionTimeoutMinutes":null,"maxMessageSizeBytes":null,"maxWriteBatchSize":null,"maxBsonObjectSize":null,"primary":null,"me":null,"$clusterTime":null,"iscryptd":false},"ac-blxffz2-shard-00-02.gqcrdvt.mongodb.net:27017":{"address":"ac-blxffz2-shard-00-02.gqcrdvt.mongodb.net:27017","type":"Unknown","hosts":[],"passives":[],"arbiters":[],"tags":{},"minWireVersion":0,"maxWireVersion":0,"roundTripTime":-1,"minRoundTripTime":0,"lastUpdateTime":41844,"lastWriteDate":0,"error":{"errorLabelSet":{},"beforeHandshake":false},"topologyVersion":null,"setName":null,"setVersion":null,"electionId":null,"logicalSessionTimeoutMinutes":null,"maxMessageSizeBytes":null,"maxWriteBatchSize":null,"maxBsonObjectSize":null,"primary":null,"me":null,"$clusterTime":null,"iscryptd":false}},"stale":false,"compatible":true,"heartbeatFrequencyMS":10000,"localThresholdMS":15,"setName":"atlas-3h6xgi-shard-0","maxElectionId":null,"maxSetVersion":null,"commonWireVersion":0,"logicalSessionTimeoutMinutes":null}}
+2026-05-24 17:38:31 [INFO]: Server running on port 5000
+2026-05-24 17:38:33 [INFO]: User connected: qXcGCa2KUCqdadzvAAAC
+2026-05-24 17:38:33 [INFO]: User connected: Csot35mByWIdOYFPAAAD
+2026-05-24 17:38:49 [INFO]: MongoDB connected
+2026-05-24 17:40:36 [INFO]: User disconnected: qXcGCa2KUCqdadzvAAAC
+2026-05-24 17:40:40 [INFO]: User connected: G095vc1pcqiU9A50AAAF
+2026-05-24 17:40:40 [INFO]: User 6a1307a936dae3fcbe24a388 joined conversation room: 6a13158971b0b58a02fe3c03
+2026-05-24 17:40:41 [INFO]: User 6a1307a936dae3fcbe24a388 joined their room and is now online
+2026-05-24 17:40:41 [INFO]: User disconnected: Csot35mByWIdOYFPAAAD
+2026-05-24 17:40:42 [INFO]: User 6a1307a936dae3fcbe24a388 is now offline
+2026-05-24 17:40:42 [INFO]: User disconnected: G095vc1pcqiU9A50AAAF
+2026-05-24 17:40:42 [INFO]: User connected: 3bPUGDJSPO7Ki6pyAAAH
+2026-05-24 17:40:42 [INFO]: User 6a1307a936dae3fcbe24a388 joined conversation room: 6a13158971b0b58a02fe3c03
+2026-05-24 17:40:42 [INFO]: User connected: i2k9ek-O7M_oQphFAAAJ
+2026-05-24 17:40:42 [INFO]: User 6a11e1de0f19705178b4874a joined conversation room: 6a13158971b0b58a02fe3c03
+2026-05-24 17:40:43 [INFO]: User 6a1307a936dae3fcbe24a388 joined their room and is now online
+2026-05-24 17:40:43 [INFO]: User 6a11e1de0f19705178b4874a joined their room and is now online
+2026-05-24 17:40:44 [INFO]: User connected: rQlYKaxAXYgGofHQAAAL
+2026-05-24 17:40:44 [INFO]: User 6a11e1de0f19705178b4874a joined conversation room: 6a13158971b0b58a02fe3c03
+2026-05-24 17:40:45 [INFO]: User 6a11e1de0f19705178b4874a is now offline
+2026-05-24 17:40:45 [INFO]: User disconnected: i2k9ek-O7M_oQphFAAAJ
+2026-05-24 17:40:45 [INFO]: User 6a11e1de0f19705178b4874a joined their room and is now online
+2026-05-24 17:40:52 [INFO]: User 6a11e1de0f19705178b4874a is now offline
+2026-05-24 17:40:52 [INFO]: User disconnected: rQlYKaxAXYgGofHQAAAL
+2026-05-24 17:42:15 [INFO]: User 6a1307a936dae3fcbe24a388 is now offline
+2026-05-24 17:42:15 [INFO]: User disconnected: 3bPUGDJSPO7Ki6pyAAAH
+2026-05-24 17:42:15 [INFO]: User connected: KsvHIPjT2Pqhd7agAAAN
+2026-05-24 17:42:15 [INFO]: User 6a1307a936dae3fcbe24a388 joined conversation room: 6a13158971b0b58a02fe3c03
+2026-05-24 17:42:15 [INFO]: User 6a1307a936dae3fcbe24a388 joined their room and is now online
+2026-05-24 17:42:17 [INFO]: User connected: RC0s3laxITKEWJZRAAAP
+2026-05-24 17:42:17 [INFO]: User 6a1307a936dae3fcbe24a388 joined conversation room: 6a13158971b0b58a02fe3c03
+2026-05-24 17:42:18 [INFO]: User 6a1307a936dae3fcbe24a388 is now offline
+2026-05-24 17:42:18 [INFO]: User disconnected: KsvHIPjT2Pqhd7agAAAN
+2026-05-24 17:42:18 [INFO]: User 6a1307a936dae3fcbe24a388 joined their room and is now online
+2026-05-24 17:42:25 [INFO]: User 6a1307a936dae3fcbe24a388 is now offline
+2026-05-24 17:42:25 [INFO]: User disconnected: RC0s3laxITKEWJZRAAAP
+2026-05-24 18:09:32 [INFO]: User connected: b4yWZdBisukSkUtGAAAR
+2026-05-24 18:09:32 [INFO]: User 6a11ce5c7c76af8c2201dea3 joined conversation room: 6a11e2130f19705178b4874b
+2026-05-24 18:09:33 [INFO]: User 6a11ce5c7c76af8c2201dea3 joined their room and is now online
+2026-05-24 18:09:34 [INFO]: User connected: 3xdWxSzl9iVps_pnAAAT
+2026-05-24 18:09:34 [INFO]: User 6a11ce5c7c76af8c2201dea3 joined conversation room: 6a11e2130f19705178b4874b
+2026-05-24 18:09:35 [INFO]: User 6a11ce5c7c76af8c2201dea3 joined their room and is now online
+2026-05-24 18:09:35 [INFO]: User 6a11ce5c7c76af8c2201dea3 is now offline
+2026-05-24 18:09:35 [INFO]: User disconnected: b4yWZdBisukSkUtGAAAR
+2026-05-24 18:09:48 [INFO]: User 6a11ce5c7c76af8c2201dea3 is now offline
+2026-05-24 18:09:48 [INFO]: User disconnected: 3xdWxSzl9iVps_pnAAAT
+2026-05-24 18:11:17 [INFO]: User connected: 8nRHh0tLbLvWvy87AAAV
+2026-05-24 18:11:17 [INFO]: User 6a11ce5c7c76af8c2201dea3 joined conversation room: 6a11e2130f19705178b4874b
+2026-05-24 18:11:20 [INFO]: User 6a11ce5c7c76af8c2201dea3 joined their room and is now online
+2026-05-24 18:11:22 [INFO]: User connected: iUT-MpbzoJq35JJwAAAX
+2026-05-24 18:11:22 [INFO]: User 6a11ce5c7c76af8c2201dea3 joined conversation room: 6a11e2130f19705178b4874b
+2026-05-24 18:11:23 [INFO]: User 6a11ce5c7c76af8c2201dea3 joined their room and is now online
+2026-05-24 18:11:26 [INFO]: User 6a11ce5c7c76af8c2201dea3 is now offline
+2026-05-24 18:11:26 [INFO]: User disconnected: 8nRHh0tLbLvWvy87AAAV
+2026-05-24 18:11:45 [INFO]: User 6a11ce5c7c76af8c2201dea3 is now offline
+2026-05-24 18:11:45 [INFO]: User disconnected: iUT-MpbzoJq35JJwAAAX
+2026-05-24 18:13:56 [INFO]: User connected: apN-CahyQBLF1l4mAAAZ
+2026-05-24 18:13:56 [INFO]: User 6a11ce5c7c76af8c2201dea3 joined conversation room: 6a11e2130f19705178b4874b
+2026-05-24 18:13:57 [INFO]: User 6a11ce5c7c76af8c2201dea3 joined their room and is now online
+2026-05-24 18:14:03 [INFO]: User connected: Gi6iPTksbAMY7Yz0AAAb
+2026-05-24 18:14:03 [INFO]: User 6a11ce5c7c76af8c2201dea3 joined conversation room: 6a11e2130f19705178b4874b
+2026-05-24 18:14:04 [INFO]: User 6a11ce5c7c76af8c2201dea3 joined their room and is now online
+2026-05-24 18:14:06 [INFO]: User 6a11ce5c7c76af8c2201dea3 is now offline
+2026-05-24 18:14:06 [INFO]: User disconnected: apN-CahyQBLF1l4mAAAZ
+2026-05-24 18:14:11 [INFO]: User 6a11ce5c7c76af8c2201dea3 is now offline
+2026-05-24 18:14:11 [INFO]: User disconnected: Gi6iPTksbAMY7Yz0AAAb
+2026-05-24 22:34:36 [INFO]: Server running on port 5000
+2026-05-24 22:35:15 [ERROR]: MongoDB connection error: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/
+MongooseServerSelectionError: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/
+    at _handleConnectionErrors (C:\nodejsservers\worknoon-chat-backend\node_modules\mongoose\lib\connection.js:1180:11)
+    at NativeConnection.openUri (C:\nodejsservers\worknoon-chat-backend\node_modules\mongoose\lib\connection.js:1111:11) {"errorLabelSet":{},"reason":{"type":"ReplicaSetNoPrimary","servers":{"ac-blxffz2-shard-00-01.gqcrdvt.mongodb.net:27017":{"address":"ac-blxffz2-shard-00-01.gqcrdvt.mongodb.net:27017","type":"Unknown","hosts":[],"passives":[],"arbiters":[],"tags":{},"minWireVersion":0,"maxWireVersion":0,"roundTripTime":-1,"minRoundTripTime":0,"lastUpdateTime":142077,"lastWriteDate":0,"error":{"errorLabelSet":{},"beforeHandshake":false},"topologyVersion":null,"setName":null,"setVersion":null,"electionId":null,"logicalSessionTimeoutMinutes":null,"maxMessageSizeBytes":null,"maxWriteBatchSize":null,"maxBsonObjectSize":null,"primary":null,"me":null,"$clusterTime":null,"iscryptd":false},"ac-blxffz2-shard-00-02.gqcrdvt.mongodb.net:27017":{"address":"ac-blxffz2-shard-00-02.gqcrdvt.mongodb.net:27017","type":"Unknown","hosts":[],"passives":[],"arbiters":[],"tags":{},"minWireVersion":0,"maxWireVersion":0,"roundTripTime":-1,"minRoundTripTime":0,"lastUpdateTime":142120,"lastWriteDate":0,"error":{"errorLabelSet":{},"beforeHandshake":false},"topologyVersion":null,"setName":null,"setVersion":null,"electionId":null,"logicalSessionTimeoutMinutes":null,"maxMessageSizeBytes":null,"maxWriteBatchSize":null,"maxBsonObjectSize":null,"primary":null,"me":null,"$clusterTime":null,"iscryptd":false},"ac-blxffz2-shard-00-00.gqcrdvt.mongodb.net:27017":{"address":"ac-blxffz2-shard-00-00.gqcrdvt.mongodb.net:27017","type":"Unknown","hosts":[],"passives":[],"arbiters":[],"tags":{},"minWireVersion":0,"maxWireVersion":0,"roundTripTime":-1,"minRoundTripTime":0,"lastUpdateTime":142104,"lastWriteDate":0,"error":{"errorLabelSet":{},"beforeHandshake":false},"topologyVersion":null,"setName":null,"setVersion":null,"electionId":null,"logicalSessionTimeoutMinutes":null,"maxMessageSizeBytes":null,"maxWriteBatchSize":null,"maxBsonObjectSize":null,"primary":null,"me":null,"$clusterTime":null,"iscryptd":false}},"stale":false,"compatible":true,"heartbeatFrequencyMS":10000,"localThresholdMS":15,"setName":"atlas-3h6xgi-shard-0","maxElectionId":null,"maxSetVersion":null,"commonWireVersion":0,"logicalSessionTimeoutMinutes":null},"cause":{"type":"ReplicaSetNoPrimary","servers":{"ac-blxffz2-shard-00-01.gqcrdvt.mongodb.net:27017":{"address":"ac-blxffz2-shard-00-01.gqcrdvt.mongodb.net:27017","type":"Unknown","hosts":[],"passives":[],"arbiters":[],"tags":{},"minWireVersion":0,"maxWireVersion":0,"roundTripTime":-1,"minRoundTripTime":0,"lastUpdateTime":142077,"lastWriteDate":0,"error":{"errorLabelSet":{},"beforeHandshake":false},"topologyVersion":null,"setName":null,"setVersion":null,"electionId":null,"logicalSessionTimeoutMinutes":null,"maxMessageSizeBytes":null,"maxWriteBatchSize":null,"maxBsonObjectSize":null,"primary":null,"me":null,"$clusterTime":null,"iscryptd":false},"ac-blxffz2-shard-00-02.gqcrdvt.mongodb.net:27017":{"address":"ac-blxffz2-shard-00-02.gqcrdvt.mongodb.net:27017","type":"Unknown","hosts":[],"passives":[],"arbiters":[],"tags":{},"minWireVersion":0,"maxWireVersion":0,"roundTripTime":-1,"minRoundTripTime":0,"lastUpdateTime":142120,"lastWriteDate":0,"error":{"errorLabelSet":{},"beforeHandshake":false},"topologyVersion":null,"setName":null,"setVersion":null,"electionId":null,"logicalSessionTimeoutMinutes":null,"maxMessageSizeBytes":null,"maxWriteBatchSize":null,"maxBsonObjectSize":null,"primary":null,"me":null,"$clusterTime":null,"iscryptd":false},"ac-blxffz2-shard-00-00.gqcrdvt.mongodb.net:27017":{"address":"ac-blxffz2-shard-00-00.gqcrdvt.mongodb.net:27017","type":"Unknown","hosts":[],"passives":[],"arbiters":[],"tags":{},"minWireVersion":0,"maxWireVersion":0,"roundTripTime":-1,"minRoundTripTime":0,"lastUpdateTime":142104,"lastWriteDate":0,"error":{"errorLabelSet":{},"beforeHandshake":false},"topologyVersion":null,"setName":null,"setVersion":null,"electionId":null,"logicalSessionTimeoutMinutes":null,"maxMessageSizeBytes":null,"maxWriteBatchSize":null,"maxBsonObjectSize":null,"primary":null,"me":null,"$clusterTime":null,"iscryptd":false}},"stale":false,"compatible":true,"heartbeatFrequencyMS":10000,"localThresholdMS":15,"setName":"atlas-3h6xgi-shard-0","maxElectionId":null,"maxSetVersion":null,"commonWireVersion":0,"logicalSessionTimeoutMinutes":null}}
+2026-05-24 22:46:57 [ERROR]: Operation `users.findOne()` buffering timed out after 10000ms
+MongooseError: Operation `users.findOne()` buffering timed out after 10000ms
+    at Timeout._onTimeout (C:\nodejsservers\worknoon-chat-backend\node_modules\mongoose\lib\drivers\node-mongodb-native\collection.js:142:25)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7) {"route":"/api/auth/login","method":"POST"}
+2026-05-24 22:47:33 [INFO]: Server running on port 5000
+2026-05-24 22:48:04 [ERROR]: MongoDB connection error: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/
+MongooseServerSelectionError: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/
+    at _handleConnectionErrors (C:\nodejsservers\worknoon-chat-backend\node_modules\mongoose\lib\connection.js:1180:11)
+    at NativeConnection.openUri (C:\nodejsservers\worknoon-chat-backend\node_modules\mongoose\lib\connection.js:1111:11) {"errorLabelSet":{},"reason":{"type":"ReplicaSetNoPrimary","servers":{"ac-blxffz2-shard-00-02.gqcrdvt.mongodb.net:27017":{"address":"ac-blxffz2-shard-00-02.gqcrdvt.mongodb.net:27017","type":"Unknown","hosts":[],"passives":[],"arbiters":[],"tags":{},"minWireVersion":0,"maxWireVersion":0,"roundTripTime":-1,"minRoundTripTime":0,"lastUpdateTime":32672,"lastWriteDate":0,"error":{"errorLabelSet":{},"beforeHandshake":false},"topologyVersion":null,"setName":null,"setVersion":null,"electionId":null,"logicalSessionTimeoutMinutes":null,"maxMessageSizeBytes":null,"maxWriteBatchSize":null,"maxBsonObjectSize":null,"primary":null,"me":null,"$clusterTime":null,"iscryptd":false},"ac-blxffz2-shard-00-01.gqcrdvt.mongodb.net:27017":{"address":"ac-blxffz2-shard-00-01.gqcrdvt.mongodb.net:27017","type":"Unknown","hosts":[],"passives":[],"arbiters":[],"tags":{},"minWireVersion":0,"maxWireVersion":0,"roundTripTime":-1,"minRoundTripTime":0,"lastUpdateTime":32684,"lastWriteDate":0,"error":{"errorLabelSet":{},"beforeHandshake":false},"topologyVersion":null,"setName":null,"setVersion":null,"electionId":null,"logicalSessionTimeoutMinutes":null,"maxMessageSizeBytes":null,"maxWriteBatchSize":null,"maxBsonObjectSize":null,"primary":null,"me":null,"$clusterTime":null,"iscryptd":false},"ac-blxffz2-shard-00-00.gqcrdvt.mongodb.net:27017":{"address":"ac-blxffz2-shard-00-00.gqcrdvt.mongodb.net:27017","type":"Unknown","hosts":[],"passives":[],"arbiters":[],"tags":{},"minWireVersion":0,"maxWireVersion":0,"roundTripTime":-1,"minRoundTripTime":0,"lastUpdateTime":30075,"lastWriteDate":0,"error":{"errorLabelSet":{},"beforeHandshake":false},"topologyVersion":null,"setName":null,"setVersion":null,"electionId":null,"logicalSessionTimeoutMinutes":null,"maxMessageSizeBytes":null,"maxWriteBatchSize":null,"maxBsonObjectSize":null,"primary":null,"me":null,"$clusterTime":null,"iscryptd":false}},"stale":false,"compatible":true,"heartbeatFrequencyMS":10000,"localThresholdMS":15,"setName":"atlas-3h6xgi-shard-0","maxElectionId":null,"maxSetVersion":null,"commonWireVersion":0,"logicalSessionTimeoutMinutes":null},"cause":{"type":"ReplicaSetNoPrimary","servers":{"ac-blxffz2-shard-00-02.gqcrdvt.mongodb.net:27017":{"address":"ac-blxffz2-shard-00-02.gqcrdvt.mongodb.net:27017","type":"Unknown","hosts":[],"passives":[],"arbiters":[],"tags":{},"minWireVersion":0,"maxWireVersion":0,"roundTripTime":-1,"minRoundTripTime":0,"lastUpdateTime":32672,"lastWriteDate":0,"error":{"errorLabelSet":{},"beforeHandshake":false},"topologyVersion":null,"setName":null,"setVersion":null,"electionId":null,"logicalSessionTimeoutMinutes":null,"maxMessageSizeBytes":null,"maxWriteBatchSize":null,"maxBsonObjectSize":null,"primary":null,"me":null,"$clusterTime":null,"iscryptd":false},"ac-blxffz2-shard-00-01.gqcrdvt.mongodb.net:27017":{"address":"ac-blxffz2-shard-00-01.gqcrdvt.mongodb.net:27017","type":"Unknown","hosts":[],"passives":[],"arbiters":[],"tags":{},"minWireVersion":0,"maxWireVersion":0,"roundTripTime":-1,"minRoundTripTime":0,"lastUpdateTime":32684,"lastWriteDate":0,"error":{"errorLabelSet":{},"beforeHandshake":false},"topologyVersion":null,"setName":null,"setVersion":null,"electionId":null,"logicalSessionTimeoutMinutes":null,"maxMessageSizeBytes":null,"maxWriteBatchSize":null,"maxBsonObjectSize":null,"primary":null,"me":null,"$clusterTime":null,"iscryptd":false},"ac-blxffz2-shard-00-00.gqcrdvt.mongodb.net:27017":{"address":"ac-blxffz2-shard-00-00.gqcrdvt.mongodb.net:27017","type":"Unknown","hosts":[],"passives":[],"arbiters":[],"tags":{},"minWireVersion":0,"maxWireVersion":0,"roundTripTime":-1,"minRoundTripTime":0,"lastUpdateTime":30075,"lastWriteDate":0,"error":{"errorLabelSet":{},"beforeHandshake":false},"topologyVersion":null,"setName":null,"setVersion":null,"electionId":null,"logicalSessionTimeoutMinutes":null,"maxMessageSizeBytes":null,"maxWriteBatchSize":null,"maxBsonObjectSize":null,"primary":null,"me":null,"$clusterTime":null,"iscryptd":false}},"stale":false,"compatible":true,"heartbeatFrequencyMS":10000,"localThresholdMS":15,"setName":"atlas-3h6xgi-shard-0","maxElectionId":null,"maxSetVersion":null,"commonWireVersion":0,"logicalSessionTimeoutMinutes":null}}
+2026-05-24 22:48:11 [ERROR]: Operation `users.findOne()` buffering timed out after 10000ms
+MongooseError: Operation `users.findOne()` buffering timed out after 10000ms
+    at Timeout._onTimeout (C:\nodejsservers\worknoon-chat-backend\node_modules\mongoose\lib\drivers\node-mongodb-native\collection.js:142:25)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7) {"route":"/api/auth/login","method":"POST"}
+2026-05-24 22:50:40 [INFO]: Server running on port 5000
+2026-05-24 22:50:55 [INFO]: MongoDB connected
+2026-05-24 22:56:35 [INFO]: User connected: zTLiTtUT1JqtatWXAAAB
+2026-05-24 22:56:35 [INFO]: User 6a11ce5c7c76af8c2201dea3 joined conversation room: 6a1374072bb503cb7f1e8f49
+2026-05-24 22:56:36 [INFO]: User 6a11ce5c7c76af8c2201dea3 joined their room and is now online
+2026-05-24 22:56:43 [INFO]: User connected: mX3kEpAjzpsFRAlBAAAD
+2026-05-24 22:56:43 [INFO]: User 6a11ce5c7c76af8c2201dea3 joined conversation room: 6a1374072bb503cb7f1e8f49
+2026-05-24 22:56:44 [INFO]: User 6a11ce5c7c76af8c2201dea3 is now offline
+2026-05-24 22:56:44 [INFO]: User disconnected: zTLiTtUT1JqtatWXAAAB
+2026-05-24 22:56:44 [INFO]: User 6a11ce5c7c76af8c2201dea3 joined their room and is now online
+2026-05-24 22:56:58 [INFO]: Email sent to offline user: info.gstech01@gmail.com
+2026-05-24 22:57:07 [INFO]: Email sent to offline user: info.gstech01@gmail.com
+2026-05-24 22:57:46 [INFO]: User 6a11ce5c7c76af8c2201dea3 is now offline
+2026-05-24 22:57:46 [INFO]: User disconnected: mX3kEpAjzpsFRAlBAAAD
