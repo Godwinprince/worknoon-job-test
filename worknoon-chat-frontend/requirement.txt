@@ -1,0 +1,4 @@
+npm install axios
+npm install socket.io-client
+npm install axios react-router-dom
+npm install lucide-react
